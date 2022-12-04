@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Webpack Starter Kit</title>
- 
-  </head>
 
-  <body>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>Tabs</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <a href="#" class="logo">Weather<span class="logo-text">Forecast</span></a>
+    <form class="search-form" id="search-form">
+      <input type="text" name="query" autocomplete="off" placeholder="Enter your city..." class="form-input" />
+      <button class="submit-btn">Search</button>
+    </form>
+  </div>
+  <div class="container">
+
+
+
+    <div class="tabs" id="tabs-1">
+      <div class="controls" data-controls>
+        <a href="#one" class="controls__item" id="first">Today</a>
+        <a href="#two" class="controls__item" id="second">Next 5 days</a>
+        <a href="#three" class="controls__item" id="third">Last 5 days</a>
+      </div>
+      <div class="loader"></div>
+      <div class="panes" data-panes>
+        <div class="pane" id="one">
+
+        </div>
+
+        <div class="pane" id="two">
+
+        </div>
+
+        <div class="pane" id="three">
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</body>
+
 </html>
